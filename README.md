@@ -43,25 +43,21 @@ messages:
 ```
 ### tables.yml
 ```yaml
-mace:
+heavy-core:
+  # Тип влияет на то, в каком ларце появится данный предмет:
+  # "OMINOUS" - зловещий ларец
+  # "COMMON" - стандартный ларец
   type: "OMINOUS"
-  material: "MACE"
+  # Материал предмета. Если его нет изначально, то добавляется.
+  material: "HEAVY_CORE"
+  # Шанс на выпадение этого предмета.
   chance: 15
-
-diamond_ominous:
-  type: "OMINOUS"
-  material: "DIAMOND"
-  chance: 50
-
-emerald_common:
-  type: "COMMON"
-  material: "EMERALD"
-  chance: 30
 ```
+
 ## Параметры tables.yml:
 
-type — тип хранилища:
-COMMON — обычное хранилище
-OMINOUS — зловещее хранилище
-material — материал предмета (например: MACE, DIAMOND, HEAVY_CORE)
-chance — шанс выпадения в процентах (0-100)
+- type: тип хранилища:
+- COMMON: обычное хранилище
+- OMINOUS: зловещее хранилище
+- material: материал предмета (например: MACE, DIAMOND, HEAVY_CORE)
+- chance: шанс выпадения в процентах (0-100)
