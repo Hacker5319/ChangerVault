@@ -1,0 +1,18 @@
+name: ChangerVault
+version: '0.1'
+main: ru.fantastworld.changerVault.ChangerVault
+api-version: '1.21'
+prefix: ChangerVault
+authors: [ TOP_Hacker5319 ]
+description: Добавляет или изменяет шанс выпадения предмета из ларцов
+
+commands:
+  changervault:
+    description: Включает/выключает режим изменения шансов
+    aliases: [cv]
+    permission: changervault.toggle
+
+permissions:
+  changervault.toggle:
+    description: Позволяет переключать режим изменения шансов
+    default: op
